@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="com.mycompany_AresVI_war_1.0-SNAPSHOTPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>com.aresvi.aresvi.Categoriaatributo</class>
+    <class>com.aresvi.aresvi.Empresa</class>
+    <class>com.aresvi.aresvi.Esquemadecisionnivel</class>
+    <class>com.aresvi.aresvi.Recomendacionproceso</class>
+    <class>com.aresvi.aresvi.Ponderacion</class>
+    <class>com.aresvi.aresvi.Direccionempresa</class>
+    <class>com.aresvi.aresvi.Atributoactividad</class>
+    <class>com.aresvi.aresvi.Contactoempresa</class>
+    <class>com.aresvi.aresvi.Roles</class>
+    <class>com.aresvi.aresvi.Evaluacionatributo</class>
+    <class>com.aresvi.aresvi.Contenedor</class>
+    <class>com.aresvi.aresvi.Proceso</class>
+    <class>com.aresvi.aresvi.Atributo</class>
+    <class>com.aresvi.aresvi.Usuarios</class>
+    <class>com.aresvi.aresvi.Auditoria</class>
+    <class>com.aresvi.aresvi.Esquemadecision</class>
+    <class>com.aresvi.aresvi.Historicoroles</class>
+    <class>com.aresvi.aresvi.Actividad</class>
+    <exclude-unlisted-classes>false</exclude-unlisted-classes>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/mydb?zeroDateTimeBehavior=convertToNull"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.password" value="root"/>
+    </properties>
+  </persistence-unit>
+</persistence>
